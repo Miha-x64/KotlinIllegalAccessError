@@ -15,6 +15,7 @@ fun main(args: Array<String>) {
     INVOKESPECIAL library/SomeClass.<init> ()V
     CHECKCAST library/SomeInterface
 !!                    ^ it's package-private!
+    compiler just should be sure that SomeClass is an implementation of SomeInterface
     INVOKEVIRTUAL library/SomeClass.takeThis (Llibrary/SomeInterface;)V
      */
 
